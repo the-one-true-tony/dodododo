@@ -1,18 +1,18 @@
-## Tony's game of Doodoodoodoo
+## Tony's game of Lyrics Hero
 
 ### Background
 
-What's that song? It goes like this doodoodoodoo! Doodoodoodoo is a precision timing and typing game.  Players will type the first letter of the word that comes up in the song as it's being played.  The rules are simple:
+Lyrics Hero is a precision timing and typing game.  Players will type the first letter of the word that comes up in the song as it's being played.  The letters will scroll from the right side of the screen to the left.  Once the letter reaches the input box, the player should type that letter.
 
-1) Type the letter at the right time
-2) The longer your streak the more points you get
+The rules are simple:
+
+1) Type the letter when the letter reaches the input box.
+2) The longer your streak the more points you get.
 3) Feel like badass DJ!!!
-
-There are many variations on the GoL.  This simulation will incorporate several of those variations, outlined in the **Functionality & MVP** and **Bonus Features** sections.
 
 ### Functionality & MVP  
 
-Doodoodoodoo will offer the following game options:
+Lyrics Hero will offer the following game options:
 
 - [ ] Start, pause, and reset buttons.
 - [ ] A score counter.
@@ -39,10 +39,12 @@ This project will be implemented with the following technologies:
 - `HTML5 Canvas` for DOM manipulation and rendering,
 - Webpack to bundle and serve up the various scripts.
 
+Most of the DOM elements of the website will be generated dynamically using Vanilla Java.  HTML5 Canvas will be used to enhance visual effects and transitions.  On top of that, webpack will be implemented to keep the development.
+
 
 ### Implementation Timeline
 
-**Day 1**: Setup webpack and upload the basic site onto heroku.  Setup a modal page to load the game configurations. Brush up on CSS and canvas techniques for visual effects in the game. Start building game features on day 2.
+**Day 1**: Setup webpack and upload the basic site onto Heroku.  Setup a modal page to load the game configurations. Brush up on CSS and canvas techniques for visual effects in the game. Start building game features on day 2.
 
 **Day 2**: Building out the basic game components so a playable game is present.
 - Audio playback
