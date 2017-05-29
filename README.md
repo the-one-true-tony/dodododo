@@ -29,7 +29,7 @@ In addition, this project will include:
 
 The game will have Start/Pause/Reset options.  Once the game has started the player will be using the keyboard to type letters that scroll from the right to the left of the screen.
 
-![wireframes](images/game.png)
+![wireframes](lib/img/game.png)
 
 ### Architecture and Technologies
 
