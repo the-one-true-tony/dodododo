@@ -29,10 +29,12 @@ body, html {
 
 .dododo-area {
   height: 100px;
-  position: relative;
   display: block;
-  top: 56%;
-  background: rgba(0, 188, 212, 0.41);
+  position: absolute;
+  bottom: 20%;
+  right: 0px;
+  background: rgba(0, 188, 212, 1);
+  width: 100%;
 }
 
 .marquee {
@@ -54,4 +56,17 @@ body, html {
   font-size: 85px;
   border-left: 1px solid black;
   border-right:1px solid black;
+}
+
+.startModal {
+  border: 1px solid red;
+  position: absolute;
+  top: 16%;
+  right: 27%;
+  width: 50%;
+  height: 50%;
+}
+
+.hidden {
+  visibility: hidden;
 }
