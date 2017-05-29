@@ -10,17 +10,19 @@ body, html {
   width: 100%;
 }
 
-.dimensions {
+.menu {
   display: inline-block;
-  float: right;
   padding: 10px;
   margin: 5px;
   background: lightcoral;
   font-family: monospace;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
-.canvas {
-  background: white;
+.game-container {
+  background: black;
   height: 100%;
   width: 100%;
 }

@@ -6,80 +6,62 @@
 
     <script>
 
-      let cursorX;
-      let cursorY;
-      let canvas;
-      let colors = ["red", "blue", "lightblue", "orange", "cyan"]
+      // let cursorX;
+      // let cursorY;
+      // let canvas;
+      // let colors = ["red", "blue", "lightblue", "orange", "cyan"]
+      //
+      // const keyPress = (e) => {
+      //   let char = e.keyCode;
+      //   let letterBox = document.getElementById("letterBox");
+      //
+      //   if(char !== 16){
+      //     if(e.shiftKey){
+      //       letterBox.innerHTML = String.fromCharCode(char);
+      //     } else if (char >=65 && char <= 90  ){
+      //       letterBox.innerHTML = String.fromCharCode(char + 32);
+      //     }
+      //
+      //     canvas = document.getElementById("canvas")
+      //     changeBackground(canvas)
+      //     setTimeout(
+      //       changeBackgroundBack(canvas),
+      //       100
+      //     );
+      //   }
+      // }
+      //
+      // const formatSize = (num) => {
+      //   let newNum = num.toString();
+      //   while(newNum.length < 3){
+      //     newNum = "0" + newNum
+      //   }
+      //   return newNum
+      // }
+      // const changeBackground = (e) => {
+      //   let randomColor = colors[Math.floor(Math.random()*colors.length)]
+      //
+      //   e.style.backgroundColor = "#f9f8c0";
+      // }
+      //
+      // const changeBackgroundBack = (e) => {
+      //   return () =>  e.style.backgroundColor = "white";
+      // }
 
-      const keyPress = (e) => {
-        let char = e.keyCode;
-        let letterBox = document.getElementById("letterBox");
 
-        if(char !== 16){
-          if(e.shiftKey){
-            letterBox.innerHTML = String.fromCharCode(char);
-          } else if (char >=65 && char <= 90  ){
-            letterBox.innerHTML = String.fromCharCode(char + 32);
-          }
-
-          canvas = document.getElementById("canvas")
-          changeBackground(canvas)
-          setTimeout(
-            changeBackgroundBack(canvas),
-            100
-          );
-        }
-      }
-
-      const formatSize = (num) => {
-        let newNum = num.toString();
-        while(newNum.length < 3){
-          newNum = "0" + newNum
-        }
-        return newNum
-      }
-      const changeBackground = (e) => {
-        let randomColor = colors[Math.floor(Math.random()*colors.length)]
-
-        e.style.backgroundColor = "#f9f8c0";
-      }
-
-      const changeBackgroundBack = (e) => {
-        return () =>  e.style.backgroundColor = "white";
-      }
-
-      window.addEventListener('resize', function(event){
-        let width = formatSize(window.innerWidth) || 0
-        let height = formatSize(window.innerHeight) || 0
-        let screenX = formatSize(window.screenX) || 0
-        let screenY = formatSize(window.screenY) || 0
-
-        document.getElementById('windowSize')
-          .innerHTML = "w: " + width + " h: " + height;
-        document.getElementById('screenXY')
-          .innerHTML = "x: " + screenX + " y: " + screenY;
-      })
-
-      window.onmousemove = function(e){
-        cursorX = e.pageX;
-        cursorY = e.pageY;
-
-        document.getElementById('cursorXY')
-          .innerHTML = "cx: " + cursorX + " cy: " + cursorY;
-      }
-
-      window.addEventListener('keydown', keyPress)
 
     </script>
   </head>
 
   <body>
-    <section id="canvas" class="canvas">
-      <section class="dimensions">
+    <section id="game-container" class="game-container">
+      <!-- <section class="menu">
         <p id="windowSize">w: h:</p>
         <p id="screenXY">x: y:</p>
         <p id="cursorXY">cx: cy:</p>
-      </section>
+      </section> -->
+
+      <canvas></canvas>
 
       <section class="dododo-area">
         <section class="marquee">
@@ -91,9 +73,6 @@
 
       </section>
     </section>
-    <canvas>
-
-    </canvas>
     <script src="lib/bundle.js"></script>
   </body>
 </html>
