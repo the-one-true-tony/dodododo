@@ -19,6 +19,7 @@ body, html {
   position: absolute;
   bottom: 0px;
   right: 0px;
+
 }
 
 .scoreBox {
@@ -44,8 +45,9 @@ body, html {
   position: absolute;
   bottom: 20%;
   right: 0px;
-  background: rgba(0, 188, 212, 1);
+  /*background: rgba(0, 188, 212, 1);*/
   width: 100%;
+
 }
 
 .marquee {
@@ -55,6 +57,7 @@ body, html {
   font-size: 85px;
   position: absolute;
   left: 0px;
+  border: 1px solid white;
 }
 
 .letter-box {
@@ -65,8 +68,9 @@ body, html {
   left: 80px;
   text-align: center;
   font-size: 85px;
-  border-left: 1px solid black;
-  border-right:1px solid black;
+  border-left: 1px solid white;
+  border-right:1px solid white;
+  color: white;
 }
 
 .startModal {
