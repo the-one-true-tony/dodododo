@@ -43,7 +43,7 @@ body, html {
   height: 100px;
   display: block;
   position: absolute;
-  top: 60%;
+  bottom: 125px;
   right: 0px;
   /*background: rgba(0, 188, 212, 1);*/
   width: 100%;
