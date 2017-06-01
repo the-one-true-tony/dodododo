@@ -99,25 +99,38 @@ body, html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: 100;
 }
 .startModal button {
   width: 200px;
-  width: 200px;
   margin: 10px;
   padding: 7px;
+  background: black;
+  border: 2px solid red;
+  border-radius: 10px;
+  color: red;
+  opacity: 0.8;
+  font-size: medium;
+  cursor: pointer;
 }
 .startModal select {
   width: 200px;
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  appearance:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   text-align-last: center;
   margin: 10px;
   padding: 7px;
+  background: black;
+  border: 2px solid red;
+  color: red;
+  font-size: medium;
+  border-radius: 9px;
+  cursor: pointer;
 }
 
 .hidden {
-  visibility: hidden;
+  display: none
 }
 
 .input-status {
