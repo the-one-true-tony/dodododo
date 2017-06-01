@@ -26,8 +26,8 @@ body, html {
   display: inline-block;
   padding: 10px;
   margin: 5px;
-  background: lightcoral;
   font-family: monospace;
+  color: white;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -52,6 +52,9 @@ body, html {
 
 .marquee {
   height: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   width: 100%;
   text-align: center;
   font-size: 85px;
@@ -82,14 +85,15 @@ body, html {
 .startModal {
   border: 1px solid red;
   position: absolute;
-  top: 16%;
-  right: 27%;
-  width: 40%;
-  height: 30%;
+  top: 24%;
+  right: 23%;
+  width: 52%;
+  height: 41%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 20px 20px 50px 20px;
+  justify-content: space-around;
   background: url(../img/modal.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -104,7 +108,6 @@ body, html {
 }
 .startModal select {
   width: 200px;
-  width: 200px;
   -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;
@@ -115,4 +118,20 @@ body, html {
 
 .hidden {
   visibility: hidden;
+}
+
+.input-status {
+  position: absolute;
+  top: 16%;
+  right: 27%;
+  width: 40%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-size: 85px;
+  color: green;
+  z-index: 10;
+
 }
