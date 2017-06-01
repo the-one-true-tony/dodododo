@@ -161,14 +161,13 @@ body, html {
 
 }
 
-
 .game-over {
   position: absolute;
   top: 13%;
   right: 19%;
   padding: 20px 20px 50px 20px;
   background: url(../img/rainbow.gif);
-  font-size: 150px;
+  font-size: 120px;
   color: transparent;
   background-size: cover;
   -webkit-background-clip: text;
