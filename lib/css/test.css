@@ -14,8 +14,8 @@ body, html {
   display: inline-block;
   padding: 10px;
   margin: 5px;
-  background: lightcoral;
-  font-family: monospace;
+  /*background: lightcoral;
+  font-family: monospace;*/
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -121,7 +121,6 @@ body, html {
 }
 .startModal select {
   width: 200px;
-  -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   text-align-last: center;
@@ -133,12 +132,18 @@ body, html {
   font-size: medium;
   border-radius: 9px;
   cursor: pointer;
+  height: 36px;
+  opacity: .9;
 }
 
 .startModal select:hover {
   background: url(../img/rainbow.gif);
   color: black;
   border: none;
+}
+
+.startModal select:after {
+  content: 'hi'
 }
 
 .hidden {
@@ -168,6 +173,46 @@ body, html {
   padding: 20px 20px 50px 20px;
   background: url(../img/rainbow.gif);
   font-size: 120px;
+  color: transparent;
+  background-size: cover;
+  -webkit-background-clip: text;
+}
+.game-over-score {
+  position: absolute;
+  top: 36%;
+  right: 24%;
+  padding: 20px 20px 50px 20px;
+  background: url(../img/rainbow.gif);
+  font-size: 62px;
+  color: transparent;
+  background-size: cover;
+  -webkit-background-clip: text;
+}
+
+.menuButton{
+  width: 100px;
+  margin: 10px;
+  padding: 7px;
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 10px;
+  color: red;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.menuButton:hover {
+  background: url(../img/rainbow.gif);
+  color: black;
+  border: none;
+}
+
+.menu-title {
+  position: absolute;
+  top: 13%;
+  padding: 20px 20px 50px 20px;
+  background: url(../img/rainbow.gif);
+  font-size: 75px;
   color: transparent;
   background-size: cover;
   -webkit-background-clip: text;
