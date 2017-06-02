@@ -10,6 +10,10 @@ body, html {
   width: 100%;
 }
 
+button:focus {
+    outline: none;
+}
+
 .menu {
   display: inline-block;
   padding: 10px;
@@ -163,13 +167,14 @@ body, html {
   font-size: 85px;
   color: green;
   z-index: 10;
-
 }
 
 .game-over {
   position: absolute;
   top: 13%;
-  right: 19%;
+  right: 0;
+  left: 0;
+  text-align: center;
   padding: 20px 20px 50px 20px;
   background: url(../img/rainbow.gif);
   font-size: 120px;
@@ -180,7 +185,9 @@ body, html {
 .game-over-score {
   position: absolute;
   top: 36%;
-  right: 24%;
+  right: 0;
+  left: 0;
+  text-align: center;
   padding: 20px 20px 50px 20px;
   background: url(../img/rainbow.gif);
   font-size: 62px;
@@ -210,6 +217,9 @@ body, html {
 .menu-title {
   position: absolute;
   top: 13%;
+  left: 0;
+  right: 0;
+  text-align: center;
   padding: 20px 20px 50px 20px;
   background: url(../img/rainbow.gif);
   font-size: 75px;

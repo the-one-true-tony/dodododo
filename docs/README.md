@@ -23,13 +23,13 @@ Lyrics Hero will offer the following game options:
 In addition, this project will include:
 
 - [ ] An About modal describing the background and rules of the game
-- [ ] A production Readme
+- [ ] A production ReadMe
 
 ### Wireframes
 
 The game will have Start/Pause/Reset options.  Once the game has started the player will be using the keyboard to type letters that scroll from the right to the left of the screen.
 
-![wireframes](lib/img/game.png)
+![wireframes](../lib/img/game.png)
 
 ### Architecture and Technologies
 
