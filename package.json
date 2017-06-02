@@ -1,0 +1,11 @@
+{
+  "name": "Lyrics Hero",
+  "version": "1.0.0",
+  "description": "formerly known as doodoodoodoo",
+  "scripts": {
+    "start": "harp server --port $PORT"
+  },
+  "dependencies": {
+    "harp": "*"
+  }
+}
