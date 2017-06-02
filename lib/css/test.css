@@ -183,6 +183,8 @@ button:focus {
   padding: 30px;
   font-size: 200px;
   color: yellow;
+  font-weight: bolder;
+  text-shadow: 7px 7px 0px #fff;
   z-index: 10;
 }
 
