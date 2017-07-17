@@ -71,7 +71,20 @@ button:focus {
   border-image-slice: 1;
 }
 
-
+.instructions {
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  text-align: left;
+  padding: 20px 30px 50px 35px;
+  background: url(../img/rainbow.gif);
+  font-size: 25px;
+  color: transparent;
+  background-size: cover;
+  -webkit-background-clip: text;
+}
 
 .letter-box {
   height: 100%;
@@ -96,9 +109,15 @@ button:focus {
   flex-direction: row;
   align-items: flex-end;
   padding: 20px 20px 50px 20px;
-  box-shadow: inset 0px 0px 20px 20px black;
+  /*box-shadow: inset 0px 0px 20px 20px black;*/
   justify-content: space-around;
-  background: url(../img/modal.jpg) no-repeat center center;
+  /*background: url(../img/modal.jpg) no-repeat center center;*/
+  background-color: black;
+  border: 3px solid transparent;
+  border-image: url(../img/rainbow.gif);
+  border-image-width: 6px;
+  border-image-slice: 1;
+  border-radius: 2px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -216,8 +235,8 @@ button:focus {
 }
 
 .menuButton{
-  width: 130px
-  margin: 10px;
+  width: 130px;
+  margin: 3px;
   padding: 7px;
   background-color: transparent;
   border: 2px solid red;
